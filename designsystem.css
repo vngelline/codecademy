@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+h1, #h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  text-align: center;
+  color: #372427;
+}
+
+h2, #h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  text-align: center;
+  color: #372427;
+}
+
+.box {
+  padding: 20px;
+  border: 1px solid #372427;
+  border-radius: 20px;
+  margin: 50px 0px;
+}
+
+.color {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1px solid #372427;
+  border-radius: 15px;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+}
+
+#linen {
+  background-color: #FCF3EA;
+}
+
+#desert {
+  background-color: #F2D0A9;
+}
+
+#red {
+  color: #fff;
+  background-color: #783B3B;
+}
+
+#noname {
+  color: #fff;
+  background-color: #372427;
+}
+
+.font {
+  display: inline-block;
+  max-width: 700px;
+  max-height: 500px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1px solid #372427;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#h2num {
+  font-family: Raleway, sans-serif;
+  font-size: 25px;
+}
+
+#t1 {
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+}
+
+#t2 {
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+}
+
+#t3 {
+  font-family: Raleway, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.button {
+  display: inline-block;
+  height: 200px;
+  width: 400px;
+  padding: 10px 20px 0px 20px;
+  margin: 10px;
+  border: 1px solid #372427;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.button p {
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+}
+
+#default, #active, #disabled {
+  display: flex;
+  width: 270px;
+  padding: 15px 30px;
+  align-items: center;
+  justify-content: center;
+  color: #FCF3EA;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 20px;
+  border-radius: 15px;
+  border: 0px;
+  margin: 20px auto;
+}
+
+#default {
+  background-color: #783B3B;
+}
+
+#active {
+  background-color: #372427;
+}
+
+#disabled {
+  background-color: #AE9D9D;
+}
