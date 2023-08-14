@@ -1,0 +1,77 @@
+<!DOCTYPEhtml>
+<html>
+  <head>
+    <title>Design System</title>
+    <link href='./styles.css' rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>My Website Style Guide</h1>
+    <section class='box'>
+      <h2>Color palette</h2>
+      <div class='color' id='linen'>
+        <p>Linen</p>
+        <p>#FCF3EA</p>
+      </div>
+      <div class='color' id='desert'>
+        <p>Desert Sand</p>
+        <p>#F2D0A9</p>
+      </div>
+      <div class='color' id='red'>
+        <p>Marrakesh Red</p>
+        <p>#783B3B</p>
+      </div>
+      <div class='color' id='noname'>
+        <p>No Name</p>
+        <p>#372427</p>
+      </div>
+    </section>
+    <section class='box'>
+      <h2>Typography</h2>
+      <div class='font' id='h1'>
+        <p>H1</p>
+        <p>Playfair Display Medium 40</p>
+      </div>
+      <div class='font' id='h2'>
+        <p>H2</p>
+        <p>Playfair Display Medium 25</p>
+      </div>
+      <div class='font' id='h2num'>
+        <p>H2 Numbers</p>
+        <p>Raleway Medium 25</p>
+      </div>
+      <div class='font' id='t1'>
+        <p>Text1</p>
+        <p>Raleway Medium 20</p>
+      </div>
+      <div class='font' id='t2'>
+        <p>Text2</p>
+        <p>Raleway Medium 16</p>
+      </div>
+      <div class='font' id='t3'>
+        <p>Text3</p>
+        <p>Raleway Light 13</p>
+      </div>
+    </section>
+    <h2>Button states</h2>
+    <section class='box'>
+      <div class='button'>
+        <p>Default</p>
+        <button id='default'>Button</button>
+      </div>
+      <div class='button'>
+        <p>Active</p>
+        <button id='active'>Button</button>
+      </div>
+      <div class='button'>
+        <p>Disabled</p>
+        <button id='disabled'>Button</button>
+      </div>
+    </section>
+    <footer>
+      <p>Made by vngelline</p>
+    </footer>
+  </body>
+</html>
