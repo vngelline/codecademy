@@ -1,0 +1,439 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* General Styles */
+
+h1 {
+    color: #001631;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+
+h2 {
+    color: #001631;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+}
+
+h3 {
+    color: #001631;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+p {
+    color: #001631;
+    font-size: 1.25rem;
+}
+
+.button-secondary {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: rgba(1, 107, 232, 0.20);
+    text-decoration: none;
+    text-decoration: none;
+    color: #001631;
+}
+
+.button-secondary:hover {
+    color: #fff;
+    background-color: #016BE8;
+    text-decoration: none;
+}
+
+.button-secondary:active {
+    color: #fff;
+    background-color: #016BE8;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 560px) {
+    p {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.875rem;
+    }
+}
+
+/* Header */
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 6;
+    padding: 1.25rem 3.75rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(10px);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.8125rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #001631;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #016BE8;
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: #016BE8;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 760px) {
+    .navigation {
+        display: none;
+    }
+}
+
+/*Main — Hero*/
+
+.relative-box {
+    position: relative;
+    margin: 8.25rem 3.75rem 3.75rem 3.75rem;
+    margin-left: 3.75rem;
+    margin-top: 8.25rem;
+    margin-right: 3.75rem;
+    /* width: 100%; */
+    height: 48rem;
+}
+
+.img-container {
+    width: 40%;
+}
+
+.relative-box .img-container {
+    width: 30%;
+    /* height: auto;
+    position: absolute; */
+}
+
+#hero-img-1,
+#hero-img-2,
+#hero-img-3 {
+    position: absolute;
+    border-radius: 10px;
+    /* width: 27rem; */
+    width: 30%;
+    height: auto;
+    display: block;
+}
+
+#hero-img-1 {
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#hero-img-2 {
+    top: 2.875rem;
+    left: 6rem;
+    z-index: 1;
+}
+
+#hero-img-3 {
+    top: 6.5rem;
+    left: 12.25rem;
+    z-index: 5;
+}
+
+.box {
+    float: right;
+    margin-top: 6.5rem;
+    width: 45%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 45px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#new-tour {
+    color: #016BE8;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.tags-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.tags-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 22rem;
+}
+
+.tags-row p {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    border: 1px solid rgba(1, 107, 232, 0.20);
+}
+
+.button-primary div {
+    display: flex;
+    padding: 20px 60px;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    background: #016BE8;
+    color: #fff;
+}
+
+.button-primary {
+    text-decoration: none;
+}
+
+.button-primary p {
+    color: #fff;
+}
+
+.button-primary:hover {
+    opacity: 0.8;
+}
+
+.button-primary:active {
+    opacity: 0.6;
+}
+
+@media only screen and (max-width: 940px) {
+
+    #hero-img-1,
+    #hero-img-2 {
+        display: none;
+    }
+
+    #hero-img-3 {
+        width: 60%;
+        left: 0;
+        top: 0;
+    }
+}
+
+/* @media only screen and (max-width: 500px) {
+    .box {
+        float: none;
+        z-index: 15;
+        position: absolute;
+        background-color: white;
+        margin-top: 6.5rem;
+        width: 45%;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 45px;
+        padding: 60px;
+        border-radius: 30px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .tags-row p {
+        font-size: 0.875rem;
+        padding: 5px 10px;
+    }
+
+    .button-primary div {
+        gap: 5px;
+        padding: 10px 30px;
+    }
+} */
+
+/*Main — About Us*/
+
+.content-box {
+    margin: 6rem 3.75rem;
+    display: flex;
+    width: fit-content;
+    padding: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 6.25rem;
+    border-radius: 30px;
+    background: rgba(1, 107, 232, 0.20);
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    /* width: 31.25rem; */
+    width: 40%;
+}
+
+#about-us {
+    font-size: 1rem;
+    color: #001631;
+    font-weight: 600;
+}
+
+.img-aboutus {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+
+.content-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 760px) {
+
+    .content-box {
+        padding: 2rem;
+    }
+
+    .img-aboutus {
+        display: none;
+    }
+
+    .text-content {
+        width: 100%;
+    }
+}
+
+/* Main — Sup Tours */
+
+#sup-tours {
+    margin: 2rem 3.75rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+#sup-tours .content-box {
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    margin: 0;
+    background-color: transparent;
+    padding: 0;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.tour-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    flex: 1 0 0;
+    min-width: 18rem;
+    max-width: 26rem;
+}
+
+.tour-card h2 {
+    font-size: 2rem;
+}
+
+.tour-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.button-tour {
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.button-tour div {
+    display: flex;
+    padding: 10px 30px;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    background: rgba(1, 107, 232, 0.20);
+}
+
+.button-tour img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.button-tour div:hover {
+    background: rgba(1, 107, 232, 0.40);
+}
+
+.button-tour div:active {
+    background: rgba(1, 107, 232, 0.50);
+}
+
+/* Footer */
+
+footer {
+    display: inline-flex;
+    height: 80px;
+    padding: 80px 60px 40px 60px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+.footer-text {
+    font-size: 0.75rem;
+}
